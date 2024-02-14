@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/flex.css">
+    <title>Mes jeux</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+         <ul class="flexible justify-content-space-evenly"></ul>
+            <input type="checkbox" role="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu">
+            <ul id="menu">
+                <li><a href="Mes jeux.html">Accueil</a></li>
+                <li><a href="Profil.html">Profil</a></li>
+                <li><a href="http://www.astymoulin.be/j34" target="_blank" rel="noopener noreferrer">Mon école</a> <i class="fas fa-heart"></i></li> 
+            </ul>
+        </nav>  
+        
+        </ul>
+    </nav>
+    </header>
+    <main>
+        <!--Titre de la page -->
+        <h1>Liste de tout mes jeux</h1>
+        <a id="boutonParticulier" href="http://www.christinesurges.be/" target="_blank" rel="noopener noreferrer">Voir
+            l'agence</a>
+        <form>
+            <label for="email">Email Address:</label>
+            <input name="email" type="email" value="" />
+        </form>
+        <div class="flexible flex-wrap justify-content-space-around">
+            <div class="container">
+                <!--Terraria-->
+                <h2>Terraria</h2>
+                <img src="IMG/Terraria.jpg" alt="image de Terraria">
+                <p><span>10$</span> - <span>Steam</span></p>
+                <a href="voirLeJeu.html">Voir le jeu</a>
+            </div>
+            <div class="container">
+                <!--Roblox-->
+                <h2>Roblox</h2>
+                <img src="IMG/Roblox.jpg" alt="image de Roblox">
+                <p><span>0$</span> - <span>Steam</span></p>
+                <a href="voirLeJeu.html">Voir le jeu</a>
+            </div>
+            <div class="container">
+                <!--Minecraft-->
+                <h2>Minecraft</h2>
+                <img src="IMG/Minecraft.png" alt="image de minecraft">
+                <p><span>50$</span> - <span>Steam</span></p>
+                <a href="voirLeJeu.html">Voir le jeu</a>
+            </div>
+    </main>
+    <footer class="flexible-justify-content-space-between">
+        <p>votre nom et prenom</p>
+        <p><a href="http://www.asty-moulin.be/j34/" target="_blank" rel="noopener noreferrer">Lien vers l'école</a></p>
+    </footer>
+    <script src="scripts.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,193 @@
+body{
+    background-color: whitesmoke;
+    padding: 0;
+    margin: 0;
+
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+footer{
+    background-color: blue;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1{
+    color: blue;
+    font-size: 3em;
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h2{
+    color: green;
+    font-size: 2em;
+    text-decoration: dotted underline;
+
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 10px 20px;
+}
+
+header li {
+    list-style-type: none;
+    font-size: 1.2em;
+}
+
+    
+
+p{
+    line-height: 30px;
+}
+
+footer a{
+    color: rgb(245, 9, 9);
+}
+
+header ul{
+    background-color: blue;
+    margin: 0;
+    padding: 20px 0;
+    text-decoration: none;
+    justify-content: space-around;
+    color: whitesmoke;
+}
+
+header li{
+    display: inline-block;
+}
+
+li{
+    color: blue;
+}
+
+a:hover{
+    background-color: green;
+    border-radius: 30px;
+    scale: 1.5;
+    transform: rotate(10deg);
+    translate: 10px;
+    transition-delay: 0.5s;
+    animation-timing-function: linear;
+}
+
+
+.progress > .progress-bar{
+    animation-name: progress-bar;
+    animation-duration: 2000ms;
+
+}
+
+.progress-bar {
+    transform: scaleX(0);
+    transform-origin: 0% 50%;
+    animation-fill-mode: both;
+}
+
+.progress-bar {
+    height: 20px;
+    background-color: green;
+}
+
+#imageProfil {
+    animation-name: showElement;
+    animation-duration: 1000ms;
+    animation-delay: 1.9s;
+    animation-fill-mode: both;
+}
+
+#imageProfil {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    transform: scale(0);
+}
+
+@media screen and (min-width: 1200px) {
+    .imageMenu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    ul li.menu {
+        display: none;
+    }
+}
+
+@keyframes showElement{
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes progress-bar{
+    0% {
+        transform: scaleX(0);
+        background-color: red;
+        opacity: .3;
+    }
+    10% {
+        transform: scaleX(.10);
+        background-color: red;
+        opacity: .6;
+    }
+    20% {
+        transform: scaleX(.20);
+        background-color: red;
+        opacity: 1;
+    }
+    30% {
+        transform: scaleX(.30);
+        background-color: orange;
+        opacity: .2;
+    }
+    40% {
+        transform: scaleX(0.4);
+        background-color: orange;
+        opacity: .4;
+    }
+    50% {
+        transform: scaleX(0.5);
+        background-color: orange;
+        opacity: .8;
+    }
+    60% {
+        transform: scaleX(.6);
+        background-color: orange;
+        opacity: 1;
+    }
+    70% {
+        transform: scaleX(.70);
+        background-color: green;
+        opacity: .2;
+    }
+    80% {
+        transform: scaleX(.80);
+        background-color: green;
+        opacity: .4;
+    }
+    90% {
+        transform: scaleX(.90);
+        background-color: green;
+        opacity: .8;
+    }
+    100% {
+        transform: scaleX(1);
+        background-color: green;
+        opacity: 1;
+        display: none;
+    }
+}
